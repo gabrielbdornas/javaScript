@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function retornaSexo(sexo) {
+      // M ou F
+      if (sexo == 'M') {
+        return 'Masculino';
+      } else if (sexo == 'F'){
+        return 'Feminino';
+      } else {
+        return 'Indeterminado';
+      };
+    };
+
+    function switchSexo (sexo) {
+      switch (sexo) {
+        case 'M':
+          return 'Masculino';
+        case 'F':
+          return 'Feminino';
+        default:
+          return 'Indeterminado';
+      }
+    }
+
+    var resultado_masculino = retornaSexo('M')
+    var resultado_feminino = retornaSexo('F')
+    var resultado_indeterminado = retornaSexo('AKDJLASKDFJKASDF')
+    console.log(resultado_masculino)
+    console.log(resultado_feminino)
+    console.log(resultado_indeterminado)
+    console.log(switchSexo('M'))
+    console.log(switchSexo('F'))
+    console.log(switchSexo('A;SDF;LAKSDJ'))
+  </script>
+</body>
+</html>

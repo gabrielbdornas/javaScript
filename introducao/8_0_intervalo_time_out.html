@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function exibeAlgo () {
+      console.log('Intervalo')
+    }
+
+    setTimeout(exibeAlgo, 5000); // espera 5 segundos para executar
+    setInterval(exibeAlgo, 6000); // executa apenas uma vez
+    setInterval(exibeAlgo(), 7000); // executa várias vezes
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Exercício número 2
+    // Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+
+    // function pares(x, y) {
+    //  // código aqui
+    // }
+    // pares(32, 321);
+    var numeros = []
+    function pares (x, y) {
+      for (x; x <= y; x ++) {
+        // Adicionar elementos em uma array: https://www.w3schools.com/jsref/jsref_push.asp
+        if (x % 2 == 0) {
+          numeros.push(x);
+        };
+      };
+      return numeros
+    };
+
+    console.log(pares(10,20))
+  </script>
+</body>
+</html>

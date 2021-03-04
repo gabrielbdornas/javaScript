@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //AND, OR, NOT
+    var sexo = 'M', idade = 23
+
+    function logicOperations(sexo, idade) {
+      if (sexo == 'M' && idade == 23) {
+        return 'Deu certo';
+      } else if (sexo == 'M' || idade == 22) {
+        return 'Deu certo com OR'
+      } else if (idade != 23) {
+        return 'Deu certo com NOT'
+      }
+      else {
+        return 'Não deu certo';
+      }
+    };
+
+    // simplificar a condicional
+    var masculino = sexo == 'M'
+    var feminino = sexo == 'F'
+
+
+    console.log(logicOperations(sexo, idade));
+    console.log(logicOperations(sexo, 40));
+    console.log(logicOperations('F', 30));
+    console.log(logicOperations('F', 23));
+    console.log(masculino);
+    console.log(feminino);
+  </script>
+</body>
+</html>
